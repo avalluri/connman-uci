@@ -1,0 +1,9 @@
+[Unit]
+Description=Update connman wireless information
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/connmanupd -w
+
+[Install]
+WantedBy=multi-user.target

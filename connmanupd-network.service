@@ -1,0 +1,9 @@
+[Unit]
+Description=Update connman network information
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/connmanupd -n
+
+[Install]
+WantedBy=multi-user.target
